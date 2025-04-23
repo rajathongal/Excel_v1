@@ -2,4 +2,4 @@
 
 ## Structure
 
-[Image](./LearningAssets/1.png)
+![Structure of excel project](./LearningAssets/1.png)
