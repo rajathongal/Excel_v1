@@ -1,0 +1,149 @@
+* {
+  /* Default / root styling */
+  box-sizing: border-box;
+
+  /* Info on elements used */
+  /* '*' Targets all elements on the page (the universal selector). */
+  /* 
+   box-sizing: border-box;:
+    Changes how the width and height of elements are calculated.
+
+    With border-box, padding and border are included inside the width and height of an element.
+
+    So if you set an element to width: 100px; and add padding: 10px;, it will still be 100px wide, instead of growing to 120px.
+    
+    Why it's useful:
+    It makes layouting and sizing much easier and more predictable.
+
+    Without it (default is content-box), padding and borders would add to the width/height, which can break layouts.
+  */
+}
+
+/* 
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  By default:
+  Every browser applies default margins and padding to certain elements — 
+  especially the <body> and headings.
+
+  The <body> usually comes with a small margin (often ~8px), 
+  which can mess up your layout, especially if you're expecting things to 
+  start at the very edge of the screen.
+
+*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-actions-container {
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.page-action {
+  margin: 0.5rem;
+  color: #f1f2f6;
+}
+
+.cell-props-actions-container {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.cell-props-actions-container > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.font-family-prop {
+  padding: 0.2rem;
+}
+
+.font-size-prop {
+  padding: 0.2rem;
+}
+
+.cell-props-actions-container > select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.formula-actions-container {
+  height: 2rem;
+  background-color: #ecf0f1;
+  padding-left: 1rem;
+  display: flex;  
+  align-items: center;
+}
+
+.formula-actions-container > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.formula-actions-container > input {
+  border: none;
+  outline: none;
+  height: 70%;
+}
+
+#formula-icon {
+  font-size: calc(1.2rem);
+}
+
+.address-bar {
+  width: 5rem;
+}
+
+.formula-bar {
+  width: calc(100vw - 5rem - 0.7rem - 0.7rem);
+}
+
+.sheet-actions-container {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+}
+
+.sheet-actions-container > * {
+  display: inline-block;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.sheets-folder-container {
+  height: 80%;
+  width: 5rem;
+  /* background-color: yellow; */
+  width: calc(100vw - 2vw);
+  display: flex;
+  align-items: center;
+}
+
+.sheet-folder {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+  font-size: 0.9rem;
+}
+
+.grid-actions-container {
+  height: calc(100vh - 3rem - 2rem - 3rem - 3rem);
+}
