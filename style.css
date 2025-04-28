@@ -83,7 +83,7 @@ body {
   height: 2rem;
   background-color: #ecf0f1;
   padding-left: 1rem;
-  display: flex;  
+  display: flex;
   align-items: center;
 }
 
@@ -104,6 +104,7 @@ body {
 
 .address-bar {
   width: 5rem;
+  text-align: center;
 }
 
 .formula-bar {
@@ -144,6 +145,69 @@ body {
   font-size: 0.9rem;
 }
 
+/* Grid CSS */
 .grid-actions-container {
   height: calc(100vh - 3rem - 2rem - 3rem - 3rem);
+  position: relative;
+  overflow: scroll;
+  background-color: #ecf0f1;
+}
+
+.top-left-dummy-box {
+  height: 2rem;
+  width: 2rem;
+  background-color: #ecf0f1;
+  position: fixed;
+  z-index: 5;
+}
+
+.address-col-container {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+
+.address-row-container {
+  height: 2rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem;
+}
+
+.cells-container {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.address-col-cell {
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-row-cell {
+  height: 2rem;
+  width: 5rem;
+  text-align: center;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+}
+
+.cell {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
 }

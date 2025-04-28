@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excel v1</title>
 
-    <!-- imports -->
+    <!-- CSS Import -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- Material Icon Import -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Page Actions Container -->
     <div class="page-actions-container">
       <div class="page-action">Home</div>
       <div class="page-action">File</div>
@@ -20,6 +22,7 @@
       <div class="page-action">Layout</div>
       <div class="page-action">Help</div>
     </div>
+    <!-- Cell Props Container -->
     <div class="cell-props-actions-container">
       <span class="material-icons"> content_copy </span>
       <span class="material-icons"> content_cut </span>
@@ -44,12 +47,21 @@
       <span class="material-icons"> format_align_center </span>
       <span class="material-icons"> format_align_right </span>
     </div>
+    <!-- Formula Container -->
     <div class="formula-actions-container">
       <input type="text" readonly class="address-bar" />
       <span class="material-icons" id="formula-icon"> functions </span>
       <input type="text" class="formula-bar" />
     </div>
-    <div class="grid-actions-container"></div>
+    <!-- Grid Container -->
+    <div class="grid-actions-container">
+      <div class="top-left-dummy-box"></div>
+      <div class="address-col-container"></div>
+      <div class="cells-container">
+        <div class="address-row-container"></div>
+      </div>
+    </div>
+    <!-- Sheet Actions Container -->
     <div class="sheet-actions-container">
       <div class="sheet-add-icon">
         <span class="material-icons"> post_add </span>
@@ -58,6 +70,7 @@
         <div class="sheet-folder">Sheet 1</div>
       </div>
     </div>
+    <!-- Script Import -->
     <script src="./script.js"></script>
   </body>
 </html>
